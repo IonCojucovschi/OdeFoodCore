@@ -3,8 +3,8 @@ namespace OdeFood.Mdoels
 {
     public class Restaurant
     {
-        public Restaurant()
-        {
-        }
+        public int ID { get; set; }
+        public string Name { get; set; }
+
     }
 }

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using OdeFood.Mdoels;
 namespace OdeFood.Services
 {
-    public class IRestaurantData
+    public interface IRestaurantData
     {
-        public IRestaurantData()
-        {
-        }
+        IEnumerable<Restaurant> GetAll();
+        Restaurant Get(int id);
     }
 }

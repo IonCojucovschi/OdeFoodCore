@@ -1,6 +1,6 @@
 ﻿using Remotion.Linq.Utilities;
 using Microsoft.Extensions.Configuration;
-namespace OdeFood
+namespace OdeFood.Services
 {
     public interface IGreeter
     {

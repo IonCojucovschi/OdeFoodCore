@@ -7,7 +7,21 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="Controllers\">
-      <DependentUpon>Controllers</DependentUpon>
+    </Folder>
+    <Folder Include="Mdoels\">
+      <DependentUpon>Mdoels</DependentUpon>
+    </Folder>
+    <Folder Include="Views\">
+      <DependentUpon>Views</DependentUpon>
+    </Folder>
+    <Folder Include="Views\Home\">
+      <DependentUpon>Home</DependentUpon>
+    </Folder>
+    <Folder Include="Services\">
+      <DependentUpon>Services</DependentUpon>
+    </Folder>
+    <Folder Include="ViewModels\">
+      <DependentUpon>ViewModels</DependentUpon>
     </Folder>
   </ItemGroup>
 

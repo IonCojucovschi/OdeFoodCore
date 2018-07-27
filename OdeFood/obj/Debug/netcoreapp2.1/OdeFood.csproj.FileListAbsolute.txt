@@ -26,3 +26,13 @@
 /Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.RazorTargetAssemblyInfo.cache
 /Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.dll
 /Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.pdb
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/bin/Debug/netcoreapp2.1/OdeFood.Views.dll
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/bin/Debug/netcoreapp2.1/OdeFood.Views.pdb
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.TagHelpers.input.cache
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.TagHelpers.output.cache
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.RazorCoreGenerate.cache
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.RazorTargetAssemblyInfo.cs
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.Views.pdb
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.csproj.CopyComplete
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/Razor/Views/Home/Details.g.cshtml.cs
