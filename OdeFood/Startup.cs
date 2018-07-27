@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Data;
+using OdeFood.Services;
 using Microsoft.AspNetCore.Routing;
 
 namespace OdeFood
@@ -20,6 +21,7 @@ namespace OdeFood
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IGreeter, Greeter>();
+            services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
             services.AddMvc();
         }
 
@@ -31,7 +33,7 @@ namespace OdeFood
         {
             if (env.IsDevelopment())
             {
-                app.UseMvc();
+                app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
             app.UseMvc(ConfigureRoutes);
