@@ -1,0 +1,9 @@
+﻿@using OdeFood.Mdoels
+@model Restaurant
+<h1>Create</h1>
+<form method="POST">
+    <input asp-for="Name" type="text" name="Name" value="" />
+    <select asp-for="TypeFood"
+            asp-items="@Html.GetEnumSelectList<CuisineType>()"></select>
+    <input type="submit" name="Save" value="Save" />
+</form>

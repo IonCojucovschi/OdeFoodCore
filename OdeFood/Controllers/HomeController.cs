@@ -4,6 +4,7 @@ using OdeFood.Mdoels;
 using OdeFood.Services;
 using OdeFood.ViewModels;
 using Remotion.Linq.Utilities;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace OdeFood.Controllers
 {
@@ -37,6 +38,10 @@ namespace OdeFood.Controllers
                 ///return NotFound();/// return an requesst error with code 404
             }
             return View(model);
+        }
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }

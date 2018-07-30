@@ -36,3 +36,5 @@
 /Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.Views.pdb
 /Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/OdeFood.csproj.CopyComplete
 /Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/Razor/Views/Home/Details.g.cshtml.cs
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/bss/Documents/IN Proj/OdeFoodCore/OdeFood/obj/Debug/netcoreapp2.1/Razor/Views/Home/Create.g.cshtml.cs
