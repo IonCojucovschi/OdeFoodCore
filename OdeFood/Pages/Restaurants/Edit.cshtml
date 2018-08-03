@@ -1,0 +1,22 @@
+﻿@page "{id}"
+@using OdeFood.Pages.Restaurants
+@model EditModel
+
+<h1>Edit @Model.Restaurants.Name</h1>
+<form method="POST">
+
+    <input type="hidden" asp-for="Restaurants.ID" />
+
+    <div>
+        <label asp-for="Restaurants.Name"></label>
+        <input asp-for="Restaurants.Name" type="text" name="Name" value="" />
+        <span asp-validation-for="Restaurants.Name"></span>
+    </div>
+
+    <div>
+        <select asp-for="Restaurants.TypeFood"
+                asp-items="@Html.GetEnumSelectList<CuisineType>()"></select>
+        <span asp-validation-for="Restaurants.TypeFood"></span>
+    </div>
+    <input type="submit" name="Save" value="Save" />
+</form>

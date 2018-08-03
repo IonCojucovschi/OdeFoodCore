@@ -47,14 +47,25 @@ namespace OdeFood.Controllers
         [HttpPost]
         public IActionResult Create(RestaurantEditMdoel model)
         {
-            var newRestaurant = new Restaurant();
-            newRestaurant.Name = model.Name;
-            newRestaurant.TypeFood = model.foodType;
+            if (ModelState.IsValid)
+            {
 
-            _restaurantData.Add(newRestaurant);
+                var newRestaurant = new Restaurant();
+                newRestaurant.Name = model.Name;
+                newRestaurant.TypeFood = model.foodType;
+
+                _restaurantData.Add(newRestaurant);
 
 
-            return View("Details", newRestaurant);
+                return View("Details", newRestaurant);
+
+
+            }
+            else
+            {
+                return View();
+            }
+
         }
     }
 }

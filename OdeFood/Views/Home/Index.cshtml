@@ -1,33 +1,35 @@
-﻿@model OdeFood.ViewModels.HomeIndexViewModel
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <table>
-        @foreach (var restaurant in Model.Restaurants)
-        {
-            <tr>
-
-                <td>
-                    @restaurant.ID
-                </td>
-                <td>
-                    @restaurant.Name
-                </td>
-                <td>
-                    <a href="/home/detail/@restaurant.ID"></a>
-                    @Html.ActionLink("Go", "Details", new { id = restaurant.ID })
-                    <a asp-action="Details" asp-route-id="@restaurant.ID">More</a>
-                </td>
-            </tr>
-
-        }
+﻿@model HomeIndexViewModel
 
 
-    </table>
-    <a asp-action="Create" asp-controller="Home">Add Restaurant</a>
+@{
+    ViewBag.Title = "Home page";
+}
+<h1>All restaurants</h1>
+<table>
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <tr>
 
-</body>
-</html>
+            <td>
+                @restaurant.ID
+            </td>
+            <td>
+                @restaurant.Name
+            </td>
+            <td>
+                <a href="/home/detail/@restaurant.ID"></a>
+                @Html.ActionLink("Go", "Details", new { id = restaurant.ID })
+                <a asp-action="Details" asp-route-id="@restaurant.ID">More</a>
+                <a asp-page="/Restaurants/Edit" asp-route-id="@restaurant.ID">Edit</a>
+            </td>
+        </tr>
+
+    }
+
+</table>
+<a asp-action="Create" asp-controller="Home">Add Restaurant</a>
+
+@section footer
+    {
+    @Model.DayMessage
+}

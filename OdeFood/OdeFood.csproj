@@ -9,19 +9,23 @@
     <Folder Include="Controllers\">
     </Folder>
     <Folder Include="Mdoels\">
-      <DependentUpon>Mdoels</DependentUpon>
     </Folder>
     <Folder Include="Views\">
-      <DependentUpon>Views</DependentUpon>
     </Folder>
     <Folder Include="Views\Home\">
-      <DependentUpon>Home</DependentUpon>
     </Folder>
     <Folder Include="Services\">
-      <DependentUpon>Services</DependentUpon>
     </Folder>
     <Folder Include="ViewModels\">
-      <DependentUpon>ViewModels</DependentUpon>
+    </Folder>
+    <Folder Include="Views\Shared\">
+      <DependentUpon>Shared</DependentUpon>
+    </Folder>
+    <Folder Include="Pages\">
+      <DependentUpon>Pages</DependentUpon>
+    </Folder>
+    <Folder Include="Pages\Restaurants\">
+      <DependentUpon>Restaurants</DependentUpon>
     </Folder>
   </ItemGroup>
 
@@ -33,10 +37,19 @@
     <Content Remove="appsettings.json" />
     <Content Remove="appsettings %28copy%29.json" />
     <Content Remove="wwwroot\index.html" />
+    <Content Remove="Pages\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="appsettings.json" />
     <None Include="appsettings.Development.json" />
     <None Include="wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Greeting.cshtml.cs">
+      <DependentUpon>Greeting.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Restaurants\Edit.cshtml.cs">
+      <DependentUpon>Edit.cshtml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
